@@ -3,6 +3,7 @@ Shader "Codeplay/TF2Character"
     Properties 
     {
         _MainTex ("Diffuse Color(RGB), Specular&Reflection(A)", 2D) = "white" {}
+        _BumpMap ("Normal Map", 2D) = "bump" {}
         _MainColor ("Diffuse Color(RGB), Specular&Reflection(A)", Color) = (0.5,0.5,0.5,1.0)
         _DiffuseWarper ("Diffuse Warp Texutre", 2D) = "black" {}    
         _SpecularK ("Specular K", Float) = 1.0
@@ -28,6 +29,7 @@ Shader "Codeplay/TF2Character"
         struct Input 
         {
             fixed2 uv_MainTex;
+            float2 uv_BumpMap;
             fixed3 viewDir;
             fixed3 worldNormal;
         };
@@ -45,6 +47,7 @@ Shader "Codeplay/TF2Character"
         };
 
         sampler2D _MainTex;
+        sampler2D _BumpMap;
         fixed4 _MainColor;
         sampler2D _DiffuseWarper;
 
@@ -68,6 +71,7 @@ Shader "Codeplay/TF2Character"
             o.Gloss = albedo.w * _SpecularK;
             o.Albedo = albedo;
             o.UV = IN.uv_MainTex;
+            o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
         }
 
         inline fixed4 LightingFresnel (SurfaceOutputCustom s, fixed3 lightDir, fixed3 viewDir, fixed atten)
