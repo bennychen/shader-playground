@@ -226,7 +226,7 @@ public class DynamicShaderBatcher : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (_cachedMeshFilter != null)
+		if (_cachedMeshFilter != null && _cachedMeshFilter.sharedMesh != null)
         {
             Gizmos.DrawWireCube(_cachedMeshFilter.sharedMesh.bounds.center, _cachedMeshFilter.sharedMesh.bounds.size);
         }

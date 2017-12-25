@@ -1,4 +1,6 @@
-﻿Shader "Codeplay/StencilOutline" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Codeplay/StencilOutline" {
 
     Properties {
 
@@ -46,7 +48,7 @@
 
             v2f vert(appdata v) {
                 v2f o;
-                o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.pos = UnityObjectToClipPos(v.vertex);
                 return o;
             }
 
@@ -92,7 +94,7 @@
                 v2f o;
                 float4 vert = v.vertex;
                 vert.xyz += v.normal * _Outline;
-                o.pos = mul(UNITY_MATRIX_MVP, vert);
+                o.pos = UnityObjectToClipPos(vert);
                 return o;
             }
 
