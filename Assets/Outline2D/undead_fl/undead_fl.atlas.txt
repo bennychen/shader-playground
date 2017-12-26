@@ -1,0 +1,146 @@
+
+undead_fl.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ap_body
+  rotate: true
+  xy: 162, 69
+  size: 57, 92
+  orig: 57, 92
+  offset: 0, 0
+  index: -1
+ap_head
+  rotate: false
+  xy: 353, 88
+  size: 93, 38
+  orig: 93, 38
+  offset: 0, 0
+  index: -1
+ap_headline
+  rotate: true
+  xy: 159, 8
+  size: 20, 51
+  orig: 20, 51
+  offset: 0, 0
+  index: -1
+ap_waist
+  rotate: false
+  xy: 98, 11
+  size: 59, 30
+  orig: 59, 30
+  offset: 0, 0
+  index: -1
+emoji_alarm
+  rotate: false
+  xy: 89, 43
+  size: 71, 83
+  orig: 71, 83
+  offset: 0, 0
+  index: -1
+eye_dead
+  rotate: false
+  xy: 212, 10
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+eye_hit
+  rotate: false
+  xy: 461, 71
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+eye_nor
+  rotate: false
+  xy: 461, 51
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+ghost_a
+  rotate: true
+  xy: 252, 14
+  size: 35, 78
+  orig: 35, 78
+  offset: 0, 0
+  index: -1
+ghost_b
+  rotate: true
+  xy: 256, 51
+  size: 33, 84
+  orig: 33, 84
+  offset: 0, 0
+  index: -1
+ghost_c
+  rotate: true
+  xy: 162, 30
+  size: 37, 88
+  orig: 37, 88
+  offset: 0, 0
+  index: -1
+ghost_d
+  rotate: true
+  xy: 2, 2
+  size: 38, 94
+  orig: 38, 94
+  offset: 0, 0
+  index: -1
+ghost_fire_bg
+  rotate: false
+  xy: 2, 42
+  size: 85, 84
+  orig: 85, 84
+  offset: 0, 0
+  index: -1
+mouth_nor
+  rotate: true
+  xy: 98, 2
+  size: 7, 9
+  orig: 7, 9
+  offset: 0, 0
+  index: -1
+mouth_unhappy
+  rotate: true
+  xy: 342, 70
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1
+mouth_yayaya
+  rotate: true
+  xy: 493, 68
+  size: 21, 11
+  orig: 21, 11
+  offset: 0, 0
+  index: -1
+pr_body
+  rotate: true
+  xy: 353, 35
+  size: 51, 80
+  orig: 51, 80
+  offset: 0, 0
+  index: -1
+pr_head
+  rotate: false
+  xy: 448, 91
+  size: 61, 35
+  orig: 61, 35
+  offset: 0, 0
+  index: -1
+pr_headline
+  rotate: false
+  xy: 435, 41
+  size: 24, 45
+  orig: 24, 45
+  offset: 0, 0
+  index: -1
+pr_waist
+  rotate: false
+  xy: 256, 86
+  size: 95, 40
+  orig: 95, 40
+  offset: 0, 0
+  index: -1
